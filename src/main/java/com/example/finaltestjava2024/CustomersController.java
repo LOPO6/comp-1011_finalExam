@@ -54,12 +54,16 @@ public class CustomersController implements Initializable {
     @FXML
     protected void onAllCustomersButtonClick() {
         rowsInTableLabel.setText("Welcome to JavaFX Application!");
+        tableViewCustomers.getItems().clear();
         tableViewCustomers.getItems().addAll(ApiUtility.getCustomers());
     }
 
     @FXML
     protected void onDomesticCustomersButtonClick() {
+
         rowsInTableLabel.setText("Domestic Customers to be found.");
+        tableViewCustomers.getItems().clear();
+        tableViewCustomers.getItems().addAll((ApiUtility.getCanadaCustomers()));
     }
 
     @Override
