@@ -18,7 +18,8 @@ public class CustomersApplication extends Application {
     }
 
     public static void main(String[] args) {
-        //launch();
+
         ApiUtility.getCustomers();
+        launch();
     }
 }

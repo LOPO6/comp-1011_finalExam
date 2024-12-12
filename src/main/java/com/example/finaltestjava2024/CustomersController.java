@@ -17,25 +17,25 @@ public class CustomersController implements Initializable {
     private Button allCustomersButton;
 
     @FXML
-    private TableColumn<?, ?> colCompany;
+    private TableColumn<customer, String> colCompany;
 
     @FXML
-    private TableColumn<?, ?> colCountry;
+    private TableColumn<customer, String> colCountry;
 
     @FXML
-    private TableColumn<?, ?> colCreatedAt;
+    private TableColumn<customer, String> colCreatedAt;
 
     @FXML
-    private TableColumn<?, ?> colEmail;
+    private TableColumn<customer, String> colEmail;
 
     @FXML
-    private TableColumn<?, ?> colFirst;
+    private TableColumn<customer, String> colFirst;
 
     @FXML
-    private TableColumn<?, ?> colId;
+    private TableColumn<customer, String> colId;
 
     @FXML
-    private TableColumn<?, ?> colLast;
+    private TableColumn<customer, String> colLast;
 
     @FXML
     private Button domesticCustomersButton;
@@ -44,7 +44,7 @@ public class CustomersController implements Initializable {
     private Label rowsInTableLabel;
 
     @FXML
-    private TableView<?> tableViewCustomers;
+    private TableView<customer> tableViewCustomers;
 
     @FXML
     private Label titleLabel;
@@ -61,6 +61,8 @@ public class CustomersController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+
+
 
     }
 }

@@ -6,10 +6,13 @@ import com.google.gson.stream.JsonReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 //Name: Logan Potopnyk
 
 public class ApiUtility {
+
     public static void getCustomers(){
+        ArrayList<customer> customers = new ArrayList<>();
         //launch();
         try(
                 FileReader fileReader = new FileReader("src/main/resources/customers.json");
@@ -17,10 +20,15 @@ public class ApiUtility {
 
         ) {
             Gson gson = new Gson();
-            ApiResponse apiResponse = gson.fromJson(jsonReader,ApiResponse.class);
-            for(customer e: ApiResponse.Customers){
-                System.out.println("Got one employee whose name is " + e.first);
+            ApiResponse customerResponse = gson.fromJson(jsonReader,ApiResponse.class);
+            for(customer e: customerResponse.Customers){
+                //add each employees info to an employee, then add employee into the company
+                customers.add(e);
+
+
             }
+
+
 
 
         } catch (FileNotFoundException e) {
