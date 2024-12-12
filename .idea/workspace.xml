@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb3c6724-061f-40b1-8212-f846c695d7af" name="Changes" comment="Question 4 , working on question 3">
+    <list default="true" id="eb3c6724-061f-40b1-8212-f846c695d7af" name="Changes" comment="Question 3 Complete">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finaltestjava2024/ApiResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finaltestjava2024/ApiResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finaltestjava2024/ApiUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finaltestjava2024/ApiUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finaltestjava2024/CustomersApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finaltestjava2024/CustomersApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finaltestjava2024/CustomersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finaltestjava2024/CustomersController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +74,7 @@
       <updated>1733893372188</updated>
       <workItem from="1733893373218" duration="39000" />
       <workItem from="1733893518726" duration="188000" />
-      <workItem from="1733960084186" duration="5270000" />
+      <workItem from="1733960084186" duration="7616000" />
     </task>
     <task id="LOCAL-00001" summary="Question 1 completed">
       <option name="closed" value="true" />
@@ -109,7 +108,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733963934137</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Question 3 Complete">
+      <option name="closed" value="true" />
+      <created>1733965527028</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733965527028</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +127,7 @@
     <MESSAGE value="added gets to customer.java, created apiResponse file" />
     <MESSAGE value="Question 2 complete" />
     <MESSAGE value="Question 4 , working on question 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Question 4 , working on question 3" />
+    <MESSAGE value="Question 3 Complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Question 3 Complete" />
   </component>
 </project>

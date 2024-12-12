@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class ApiUtility {
 
-    public static void getCustomers(){
+    public static ArrayList<customer> getCustomers(){
         ArrayList<customer> customers = new ArrayList<>();
         //launch();
         try(
@@ -21,12 +21,8 @@ public class ApiUtility {
         ) {
             Gson gson = new Gson();
             ApiResponse customerResponse = gson.fromJson(jsonReader,ApiResponse.class);
-            for(customer e: customerResponse.Customers){
-                //add each employees info to an employee, then add employee into the company
-                customers.add(e);
-
-
-            }
+            //add each employees info to an employee, then add employee into the company
+            customers.addAll(customerResponse.Customers);
 
 
 
@@ -36,6 +32,7 @@ public class ApiUtility {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+        return customers;
 
     }
 

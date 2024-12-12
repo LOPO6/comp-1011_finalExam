@@ -7,8 +7,10 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 
@@ -61,7 +63,23 @@ public class CustomersController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        colCompany.setCellValueFactory(new PropertyValueFactory<>("company"));
+        colCountry.setCellValueFactory(new PropertyValueFactory<>("country"));
+        colId.setCellValueFactory(new PropertyValueFactory<>("id"));
+        colEmail.setCellValueFactory(new PropertyValueFactory<>("email"));
+        colCreatedAt.setCellValueFactory(new PropertyValueFactory<>("created_at"));
+        colFirst.setCellValueFactory(new PropertyValueFactory<>("First"));
+        colLast.setCellValueFactory(new PropertyValueFactory<>("Last"));
+        titleLabel.setText("Simcoe AI Lab");
 
+        ArrayList<customer> customers = null;
+        //add all the data from the thing here
+
+
+
+
+
+        tableViewCustomers.getItems().addAll(ApiUtility.getCustomers());
 
 
     }
