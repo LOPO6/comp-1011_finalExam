@@ -54,6 +54,7 @@ public class CustomersController implements Initializable {
     @FXML
     protected void onAllCustomersButtonClick() {
         rowsInTableLabel.setText("Welcome to JavaFX Application!");
+        tableViewCustomers.getItems().addAll(ApiUtility.getCustomers());
     }
 
     @FXML
@@ -71,15 +72,10 @@ public class CustomersController implements Initializable {
         colFirst.setCellValueFactory(new PropertyValueFactory<>("First"));
         colLast.setCellValueFactory(new PropertyValueFactory<>("Last"));
         titleLabel.setText("Simcoe AI Lab");
-
-        ArrayList<customer> customers = null;
         //add all the data from the thing here
 
-
-
-
-
         tableViewCustomers.getItems().addAll(ApiUtility.getCustomers());
+        rowsInTableLabel.setText(String.valueOf(ApiUtility.getCustomers().size()));
 
 
     }
