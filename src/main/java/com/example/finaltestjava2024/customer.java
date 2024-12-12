@@ -1,5 +1,5 @@
 package com.example.finaltestjava2024;
-
+//Name: Logan Potopnyk
 public class customer {
     public String id;
 

@@ -1,11 +1,6 @@
 package com.example.finaltestjava2024;
-
+//Name: Logan Potopnyk
 import java.util.List;
 public class ApiResponse {
-    private List<customer> Company;
-
-    public List<customer> getCompany(){
-        return Company;
-    }
-
+    public static List<customer> Customers;
 }
