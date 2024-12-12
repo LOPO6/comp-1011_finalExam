@@ -1,5 +1,6 @@
 package com.example.finaltestjava2024;
 //Name: Logan Potopnyk
+//student number: 1226100
 public class customer {
     public String id;
 
